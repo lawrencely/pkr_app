@@ -9,8 +9,13 @@
 #            PATCH  /events/:id(.:format)      events#update
 #            PUT    /events/:id(.:format)      events#update
 #            DELETE /events/:id(.:format)      events#destroy
+#       root GET    /                          pages#home
 #
 
 Rails.application.routes.draw do
   resources :events
+  root to: 'pages#home'
+
+  get '/leagues' => 'pages#leagues'
+  get '/partners' => 'pages#partners'
 end
