@@ -1,0 +1,16 @@
+<%= form_for(:event, :url => {:controller => 'events', :action => 'create'}) do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name, class: "form-control" %>
+  <%= f.label :suburb %>
+  <%= f.text_field :suburb, class: "form-control" %>
+  <%= f.label :rego_time %>
+  <%= f.datetime_field :rego_time %>
+
+
+
+
+
+  <%= f.submit :Create, class: "btn btn-primary"  %>
+
+<% end %>

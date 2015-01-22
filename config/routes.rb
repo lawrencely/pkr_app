@@ -10,6 +10,8 @@
 #            PUT    /events/:id(.:format)      events#update
 #            DELETE /events/:id(.:format)      events#destroy
 #       root GET    /                          pages#home
+#    leagues GET    /leagues(.:format)         pages#leagues
+#   partners GET    /partners(.:format)        pages#partners
 #
 
 Rails.application.routes.draw do
